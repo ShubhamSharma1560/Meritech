@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="./index.html#about">About</a></li>
+      </ul>
+    </nav>
+
+    <h1>Data Of Covid Vaccine</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Vaccine Name</th>
+        <th>No. Of Dose Taken</th>
+        <th>Place</th>
+      </tr>
+      <tr>
+        <td>Shubham Sharma</td>
+        <td>Co-Vaccine</td>
+        <td>1</td>
+        <td><h5>Nadaun</h5></td>
+      </tr>
+
+      <tr>
+        <td>Rahul Sharma</td>
+        <td>Co-Vaccine</td>
+        <td>2</td>
+        <td><h5>Chandigarh</h5></td>
+      </tr>
+      <tr>
+        <td>Somesh Kumar</td>
+        <td>Covishield</td>
+        <td>2</td>
+        <td><h5>Kolkata</h5></td>
+      </tr>
+      <tr>
+        <td>Shubham Kumar</td>
+        <td>Covishield</td>
+        <td>1</td>
+        <td><h5>Delhi</h5></td>
+      </tr>
+      <tr>
+        <td>Rohit Sharma</td>
+        <td>Covishield</td>
+        <td>2</td>
+        <td><h5>Mumbai</h5></td>
+      </tr>
+      <tr>
+        <td>Virat Kohlia</td>
+        <td>Covishield</td>
+        <td>2</td>
+        <td><h5>Delhi</h5></td>
+      </tr>
+      <tr>
+        <td>Dhoni</td>
+        <td>Co-Vaccine</td>
+        <td>2</td>
+        <td><h5>Patna</h5></td>
+      </tr>
+      <tr>
+        <td>Salman Khan</td>
+        <td>Phizer</td>
+        <td>2</td>
+        <td><h5>Banglore</h5></td>
+      </tr>
+
+      <tr>
+        <td>Akshay Kumar</td>
+        <td>Co-Vaccine</td>
+        <td>1</td>
+        <td><h5>Jalandhar</h5></td>
+      </tr>
+
+      <tr>
+        <td>Doremon</td>
+        <td>Covishield</td>
+        <td>2</td>
+        <td><h5>Japan</h5></td>
+      </tr>
+      <tr>
+        <td>Gaurav</td>
+        <td>Co-Vaccine</td>
+        <td>2</td>
+        <td><h5>Haryana</h5></td>
+      </tr>
+
+      <tr>
+        <td>Rajesh</td>
+        <td>Covishield</td>
+        <td>2</td>
+        <td><h5>Madhya Pradesh</h5></td>
+      </tr>
+    </table>
+    <script>
+      let obj = JSON.parse(sessionStorage.getItem("Auth"));
+      if (obj === null) {
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>
